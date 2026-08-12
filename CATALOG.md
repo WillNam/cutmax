@@ -1,67 +1,44 @@
-# Catalog — included in cutmax
+# Catalog
 
-All entries are **free/local**, **prompt-only**, or **local-app** (no mandatory paid cloud video API).
+## 地基 · `skills/`
 
-## Hub
+本地 / 脚本 / 免费素材。不强制云积分。
 
-| Skill | Type | Notes |
-|---|---|---|
-| `local-video-studio` | hub + scripts | Routes free recipes; `photo_draw_reveal.py` |
-
-## Local render / edit
-
-| Skill | Type | Notes |
-|---|---|---|
-| `story-to-handdrawn-video` | Remotion wrapper | Needs `tools/story-to-handdrawn-video` + `npm install` |
-| `video-shotcraft` | Remotion product shots | Local template; no Seedance |
-| `baocut` | Local Mac app CLI | Transcribe / cleanup / export; CLI does not call paid LLM APIs |
-| `manim-video` | Local Manim | Extracted free subskill (no ElevenLabs path) |
-
-## Prompt / script (you render elsewhere if you want)
-
-| Skill | Type | Notes |
-|---|---|---|
-| `female-outfit-director` | prompts + timeline | No cloud render |
-| `gbro-cover-design` | cover prompts | No API call from skill |
-| `script-to-shootable-storyboard` | shootable boards | Prompt/plan only in this pack |
-| `self-media-short-video` | short-video scripts | Cuts only when user supplies footage |
-| `xhs-visual-director-skill` | Xiaohongshu visual plan | Stills / carousel direction |
-| `guizang-social-card-skill` | social cards | Image / Live Photo cards |
-| `learning-map-infographic` | infographic | Dense vertical learning maps |
-
-## Production / identity / publish helpers
-
-| Skill | Type | Notes |
-|---|---|---|
-| `dr-chan-video-production` | production rules | Medical video QC rules |
-| `conan-digital-human` | avatar library ops | Local identity workflow |
-| `video-publisher` | draft upload helper | Ego Lite drafts; not cloud video gen |
-
-## Content workflow (pre-cut)
-
-| Skill | Type |
+| Skill | 类型 |
 |---|---|
-| `self-media-content-workflow` | router |
-| `self-media-content-brief` | brief |
-| `self-media-content-delivery` | delivery pack |
-| `self-media-platform-copywriting` | platform copy |
+| `local-video-studio` | 枢纽 + 本地过程动效脚本 |
+| `story-to-handdrawn-video` | 本地 Remotion 手绘 |
+| `video-shotcraft` | 产品镜头 Remotion |
+| `baocut` | 本地口播整理（BaoCut App） |
+| `manim-video` | 本地图表动画 |
+| `female-outfit-director` | 换装提示词 |
+| `gbro-cover-design` | 封面提示词 |
+| `script-to-shootable-storyboard` | 可拍分镜 |
+| `self-media-short-video` | 短视频脚本 |
+| `xhs-visual-director-skill` | 小红书视觉导演 |
+| `guizang-social-card-skill` | 社交卡片 |
+| `learning-map-infographic` | 学习地图信息图 |
+| `dr-chan-video-production` | 医疗成片规范 |
+| `conan-digital-human` | 数字人资产库 |
+| `video-publisher` | 平台草稿发布助手 |
+| `self-media-content-*` | 成片前文案工作流 |
 
-## Rules
+## 平台 · `platforms/`
 
-| File | Notes |
+官方产品与大模型工作流——为了做得更好而收录。
+
+| Path | 内容 |
 |---|---|
-| `rules/stock-broll-workflow.md` | Plan → Pexels → MANIFEST → cut |
+| `chatcut/` | ChatCut 多轨剪辑（MCP） |
+| `pireel/` | Pireel 口播工作室（MCP） |
+| `seedance2/` | 即梦 Seedance 创意工作台（提示词 + API 生成） |
+| `seedance-and-prompts/` | Seedance 提示词族、vibe、FPV 等 |
 
-## Tools
+详见 [platforms/README.md](platforms/README.md)。
 
-| Path | Notes |
+## 规则与工具
+
+| Path | 说明 |
 |---|---|
-| `tools/story-to-handdrawn-video/` | Remotion sources + fonts (no `node_modules`, no generated plates) |
-
-## Opt-in (paid-model prompts only)
-
-Not linked by `link-skills.sh`. See `opt-in/prompt-for-paid-models/README.md`.
-
-| Path | Notes |
-|---|---|
-| `opt-in/prompt-for-paid-models/` | Seedance / Kling / Runway / Veo / Sora **prompt** skills; no API calls from cutmax |
+| `rules/stock-broll-workflow.md` | Pexels B-roll |
+| `tools/story-to-handdrawn-video/` | 手绘 Remotion 工程 |

@@ -14,7 +14,7 @@ description: >
 
 把「能本地跑通、不烧付费 API」的视频剪辑与素材生成收成一条工作室流程。默认工具栈：`ffmpeg` + `PIL` + 已安装的本地 Remotion 手绘项目 + 宿主免费生图（若可用）+ Pexels 免费素材。
 
-**硬原则：不出片也绝不静默改走付费云生成。缺 key 就换免费配方，或只交付提示词/分镜。**
+**硬原则：本地保底；官方平台用于拔高。扣费云生成前必须说明并征得确认。缺平台账号时换本地配方或只交付提示词/分镜，不静默失败。**
 
 ## When to Use
 
@@ -31,7 +31,7 @@ description: >
 
 ## Hard Rules
 
-1. **禁止默认调用**：`GEMINI_API_KEY`、`ATLASCLOUD_API_KEY`、Seedance/Kling/Runway 付费接口、ElevenLabs 计费 ASR、任何按次扣费的 `submit_video` / 云端 I2V。
+1. **未经确认不要擅自调用**：`GEMINI_API_KEY`、`ATLASCLOUD_API_KEY`、Seedance/Kling/Runway 付费接口、ElevenLabs 计费 ASR、任何按次扣费的 `submit_video` / 云端 I2V。
 2. **允许**：`ffmpeg` / `ffprobe`、Pillow、本地 Remotion（`story-to-handdrawn-video`）、宿主内置免费生图（若环境提供）、Pexels 免费下载、纯提示词 Skill、已打开且不额外扣费的剪辑 MCP（仅用已有素材/免费库）。
 3. **先问清楚画幅与时长**；默认竖版 `1080×1440`（3:4）或 `1080×1920`（9:16），静音 H.264，后期再配音。
 4. **成片前必须抽帧自检**（至少：开场、过程中段、结尾）。不要只凭命令成功就说「完成」。
@@ -95,6 +95,12 @@ python3 ~/.codex/skills/local-video-studio/scripts/photo_draw_reveal.py \
 - `baocut` — 本地转写/粗剪（需已装 BaoCut App）
 - `video-use` / `manim-video` — 仅用本地 ffmpeg/Manim 部分；跳过需 ElevenLabs 的步骤或改用已有字幕
 - 项目规则 `stock-broll-workflow` — Pexels 免费 B-roll
+
+## Platforms（官方加持）
+
+cutmax 的 `platforms/` 收录 Seedance、ChatCut、Pireel 等官方能力——为了成片更好，不是抵制。
+本地配方保底；需要大模型画面或多轨精修时，读取并遵循对应 platform skill，**扣费生成前先确认用户**。
+启用：`./scripts/link-platforms.sh`
 
 ## Proven Case Anchors（本仓库）
 

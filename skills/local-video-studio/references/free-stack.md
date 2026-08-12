@@ -1,6 +1,6 @@
-# Free stack vs paid (do not cross)
+# Local foundation + official platforms
 
-## Allowed (default)
+## Local (foundation)
 
 | Tool | Role | Notes |
 |---|---|---|
@@ -15,7 +15,7 @@
 | Manim (video-use subskill) | Chart / math slots | Local render |
 | ChatCut / Pireel MCP | Edit with **already-local or free library** assets | Do not trigger paid `submit_*` generation |
 
-## Forbidden unless user explicitly insists + accepts cost
+## Official platforms (confirm before spend)
 
 | Tool / key | Why blocked here |
 |---|---|
@@ -26,7 +26,7 @@
 | ChatCut/Pireel `submit_video` / paid MG | Credits |
 | Any “just add the key and continue” silent upgrade | Violates this skill |
 
-## If a sibling skill demands a key
+## If a platform needs login or credits
 
 1. Stop before the paid stage.
 2. Tell the user what free substitute you will run instead.
