@@ -2,7 +2,7 @@
 
 Local-first **video editing + media skills** pack for agent runtimes (Codex / Claude / Cursor).
 
-**Hard rule:** this repo only ships skills that can run **without paid cloud video APIs** (no Seedance / Kling / Runway / Gemini video / Atlas Vox / ElevenLabs billing paths, no credit `submit_video`).
+**Hard rule:** the default `skills/` pack runs **without paid cloud video APIs**. Prompt packs for Seedance/Kling/etc. live under `opt-in/` and are **not** linked unless you opt in.
 
 Start here: [`skills/local-video-studio/SKILL.md`](skills/local-video-studio/SKILL.md)
 
@@ -12,9 +12,11 @@ Start here: [`skills/local-video-studio/SKILL.md`](skills/local-video-studio/SKI
 git clone https://github.com/WillNam/cutmax.git
 cd cutmax
 
-# Point your agent skills dir at this pack (example: Codex)
-ln -sfn "$(pwd)/skills" ~/.codex/skills-cutmax
-# Or copy / symlink individual skill folders into ~/.codex/skills/
+# Free/local skills (recommended)
+./scripts/link-skills.sh ~/.codex/skills
+
+# Optional: prompt packs for paid video products (Seedance/Kling/…)
+./scripts/link-opt-in-prompts.sh ~/.codex/skills
 ```
 
 For the Remotion handdrawn renderer:
@@ -32,6 +34,7 @@ Machine basics: `ffmpeg`, `ffprobe`, Python 3 + Pillow.
 | Path | Role |
 |---|---|
 | `skills/` | Agent skills (free / local / prompt-only) |
+| `opt-in/prompt-for-paid-models/` | **Opt-in** prompt packs for Seedance/Kling/etc. (not auto-linked) |
 | `tools/story-to-handdrawn-video/` | Remotion project used by handdrawn skill |
 | `rules/stock-broll-workflow.md` | Pexels B-roll intake rule |
 | `CATALOG.md` | Full include list |
@@ -50,6 +53,7 @@ Machine basics: `ffmpeg`, `ffprobe`, Python 3 + Pillow.
 | Short-video script / storyboard | `self-media-short-video`, `script-to-shootable-storyboard` |
 | Charts / math slots | `manim-video` |
 | Stock B-roll | `rules/stock-broll-workflow.md` |
+| Seedance/Kling **prompts** (opt-in) | `opt-in/prompt-for-paid-models/` |
 
 ## License
 

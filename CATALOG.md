@@ -57,3 +57,11 @@ All entries are **free/local**, **prompt-only**, or **local-app** (no mandatory 
 | Path | Notes |
 |---|---|
 | `tools/story-to-handdrawn-video/` | Remotion sources + fonts (no `node_modules`, no generated plates) |
+
+## Opt-in (paid-model prompts only)
+
+Not linked by `link-skills.sh`. See `opt-in/prompt-for-paid-models/README.md`.
+
+| Path | Notes |
+|---|---|
+| `opt-in/prompt-for-paid-models/` | Seedance / Kling / Runway / Veo / Sora **prompt** skills; no API calls from cutmax |

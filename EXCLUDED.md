@@ -24,15 +24,16 @@ These exist in local agent skill libraries but were **not** copied into cutmax b
 
 ## Prompt wrappers aimed at paid video models
 
-Kept out of this pack to avoid “free skill → paid render” confusion:
+Moved to **opt-in** (not free default):
 
-- `vibe-creating-prompt` (Seedance / Sora / Kling / Veo / Runway)
-- `fpv-immersive-video-prompting` (Seedance / Kling / Runway / Veo)
-- `seedance-prompt-en` and related prompt packs
+- `opt-in/prompt-for-paid-models/` — Seedance family prompt packs, `vibe-creating-prompt`, `fpv-immersive-video-prompting`
+- Enable with `./scripts/link-opt-in-prompts.sh`
+
+Still fully excluded (API / credit callers):
+
+- `seedance2` (即梦 API 工作台，会走付费接口)
 
 ## Other
 
 - `watch` (URL pipeline may pull third-party transcripts; not a cut pack core)
 - Backup / `.bak` skill trees
-
-If you explicitly want a **prompt-only** folder for paid models later, add it as an opt-in subdirectory — do not merge into the free default router.
