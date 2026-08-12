@@ -1,0 +1,4 @@
+interface:
+  display_name: "Learning Map Infographic"
+  short_description: "Create dense vertical learning-map infographics"
+  default_prompt: "Use $learning-map-infographic to turn this topic into a polished vertical learning-map infographic."

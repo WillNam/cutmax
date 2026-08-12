@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dr Chan Video Production"
+  short_description: "Produce consistent Dr Chan medical reels"
+  default_prompt: "Use $dr-chan-video-production to plan, edit, package, and QA this Dr Chan video with stage-aware workflow and visible attribution for 陳譽 / Dr Delex Chan."

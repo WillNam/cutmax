@@ -1,0 +1,256 @@
+{
+  "project": {
+    "title": "酒吧绅士·手在画你",
+    "mode": "speed",
+    "images_per_scene": 1,
+    "derive_bw": "local",
+    "enable_detail": false,
+    "gen_size": 1024,
+    "export_size": [
+      1080,
+      1440
+    ],
+    "ratio": "3:4",
+    "width": 1080,
+    "height": 1440,
+    "fps": 30,
+    "transition": "cut",
+    "style_lock": "preserve uploaded hand-drawn diary-comic artwork",
+    "character_lock": "preserve uploaded characters and composition exactly",
+    "audio": {
+      "voiceover": "post",
+      "bgm": "optional_bed_only",
+      "bgm_follows_text": false
+    }
+  },
+  "scenes": [
+    {
+      "id": "01",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 01",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/01_master.png"
+      }
+    },
+    {
+      "id": "02",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 02",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/02_master.png"
+      }
+    },
+    {
+      "id": "03",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 03",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/03_master.png"
+      }
+    },
+    {
+      "id": "04",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 04",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/04_master.png"
+      }
+    },
+    {
+      "id": "05",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 05",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/05_master.png"
+      }
+    },
+    {
+      "id": "06",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 06",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/06_master.png"
+      }
+    },
+    {
+      "id": "07",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 07",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/07_master.png"
+      }
+    },
+    {
+      "id": "08",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 08",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/08_master.png"
+      }
+    },
+    {
+      "id": "09",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 09",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/09_master.png"
+      }
+    },
+    {
+      "id": "10",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 10",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/10_master.png"
+      }
+    },
+    {
+      "id": "11",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 11",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/11_master.png"
+      }
+    },
+    {
+      "id": "12",
+      "duration_sec": 4.6,
+      "text": "",
+      "visual": "上传图片 12",
+      "shot": "full_uploaded_page",
+      "layers": [
+        "color"
+      ],
+      "color_hint": null,
+      "detail_hint": null,
+      "caption_box": null,
+      "assets": {
+        "text_image": null,
+        "bw": null,
+        "detail": null,
+        "color": "assets/generated/uploads/酒吧绅士-手在画你-e04a782c/12_master.png"
+      }
+    }
+  ]
+}

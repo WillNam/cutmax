@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conan 数字人工作台"
+  short_description: "管理 Conan 的声音、角色库与数字人口播制作流程"
+  default_prompt: "使用 $conan-digital-human 整理我的数字人素材并准备一条口播样片。"
