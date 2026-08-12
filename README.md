@@ -1,25 +1,79 @@
 # cutmax
 
-Local-first **video editing + media skills** pack for agent runtimes (Codex / Claude / Cursor).
+### 为创作者准备的本地视频工作室。  
+给 Agent 用的剪辑与素材技能包。
 
-**Hard rule:** the default `skills/` pack runs **without paid cloud video APIs**. Prompt packs for Seedance/Kling/etc. live under `opt-in/` and are **not** linked unless you opt in.
+---
 
-Start here: [`skills/local-video-studio/SKILL.md`](skills/local-video-studio/SKILL.md)
+**在你的电脑上完成。**  
+不依赖付费云视频接口。  
+打开即用，按需扩展。
 
-## Install
+cutmax 把已经验证过的视频剪辑、过程动效、分镜脚本与素材流程，整理成一套可被 Codex / Claude / Cursor 直接调用的 Skills。默认路径只走本地工具与免费素材；面向 Seedance、Kling 等产品的提示词，收在可选目录里，由你决定是否启用。
+
+<br>
+
+## 安静地强大。
+
+少一些 key，多一些成品。
+
+|  |  |
+| --- | --- |
+| **本地优先** | ffmpeg、Pillow、Remotion、BaoCut。算力与素材留在你这边。 |
+| **结构清晰** | 一个枢纽 Skill 路由配方；其余按场景拆分，互不拖累。 |
+| **边界分明** | 免费默认栈与付费模型提示词分开。不会默默把你带进计费接口。 |
+| **为 Agent 设计** | 每个 Skill 都有明确触发条件与验收习惯，适合交给助手连续执行。 |
+
+<br>
+
+## 你想做的，它刚好会。
+
+**照片变成有过程的成片。**  
+实拍、手在画、线稿、上色、成稿——阶段分明，而不是一张图空转。
+
+**手绘日记与翻页叙事。**  
+本地 Remotion 渲染，竖版友好。
+
+**口播整理。**  
+在已安装 BaoCut 的 Mac 上，转写、去口癖、导出字幕与粗剪。
+
+**产品镜头与图表。**  
+Shotcraft 模板与 Manim 插槽，适合演示与讲解。
+
+**脚本、分镜、封面、换装方案。**  
+先写清，再决定在哪里渲染。
+
+**免费 B-roll。**  
+从画面计划到 Pexels 下载，再到时间轴清单。
+
+<br>
+
+## 两层设计。像开关一样简单。
+
+**默认。** `skills/`  
+本地剪辑、本地渲染、纯提示词脚本、免费素材流程。  
+一条命令链接到你的 Agent Skills 目录。
+
+**可选。** `opt-in/prompt-for-paid-models/`  
+为即梦 / Seedance、Kling、Runway、Veo、Sora 等准备的提示词技能。  
+不自动加载。启用后也只写提示词，不替你调用付费 API。
+
+<br>
+
+## 开始使用。
 
 ```bash
 git clone https://github.com/WillNam/cutmax.git
 cd cutmax
 
-# Free/local skills (recommended)
+# 链接免费 / 本地 Skills
 ./scripts/link-skills.sh ~/.codex/skills
 
-# Optional: prompt packs for paid video products (Seedance/Kling/…)
+# 若需要付费模型提示词包（可选）
 ./scripts/link-opt-in-prompts.sh ~/.codex/skills
 ```
 
-For the Remotion handdrawn renderer:
+手绘渲染器（首次）：
 
 ```bash
 cd tools/story-to-handdrawn-video
@@ -27,34 +81,40 @@ npm install
 export STORY_VIDEO_PROJECT="$(pwd)"
 ```
 
-Machine basics: `ffmpeg`, `ffprobe`, Python 3 + Pillow.
+建议环境：`ffmpeg` · `ffprobe` · Python 3 + Pillow
 
-## What's inside
+入口 Skill：[local-video-studio](skills/local-video-studio/SKILL.md)
 
-| Path | Role |
-|---|---|
-| `skills/` | Agent skills (free / local / prompt-only) |
-| `opt-in/prompt-for-paid-models/` | **Opt-in** prompt packs for Seedance/Kling/etc. (not auto-linked) |
-| `tools/story-to-handdrawn-video/` | Remotion project used by handdrawn skill |
-| `rules/stock-broll-workflow.md` | Pexels B-roll intake rule |
-| `CATALOG.md` | Full include list |
-| `EXCLUDED.md` | Paid / third-party API skills deliberately left out |
+<br>
 
-## Quick router
+## 目录一览。
 
-| You want… | Use |
-|---|---|
-| Local still→video / draw process / free cut hub | `local-video-studio` |
-| Hand-drawn diary / page flip | `story-to-handdrawn-video` + `tools/` |
-| Talking-head cleanup + captions (Mac app) | `baocut` |
-| Product shot Remotion template | `video-shotcraft` |
-| Outfit carousel prompts (no cloud render) | `female-outfit-director` |
-| Cover prompts | `gbro-cover-design` |
-| Short-video script / storyboard | `self-media-short-video`, `script-to-shootable-storyboard` |
-| Charts / math slots | `manim-video` |
-| Stock B-roll | `rules/stock-broll-workflow.md` |
-| Seedance/Kling **prompts** (opt-in) | `opt-in/prompt-for-paid-models/` |
+|  |  |
+| --- | --- |
+| [skills/](skills/) | 默认技能包 |
+| [opt-in/](opt-in/prompt-for-paid-models/) | 付费模型提示词（需显式启用） |
+| [tools/](tools/story-to-handdrawn-video/) | 手绘 Remotion 工程 |
+| [rules/](rules/stock-broll-workflow.md) | 免费 B-roll 工作流 |
+| [CATALOG.md](CATALOG.md) | 完整收录表 |
+| [EXCLUDED.md](EXCLUDED.md) | 刻意未收录项 |
+
+<br>
+
+## 设计原则。
+
+1. **默认免费。** 缺 key 就换本地配方，不静默升级到付费云生成。  
+2. **先看画面。** 成片前抽帧自检；阶段差异必须肉眼可辨。  
+3. **少即是多。** 一个任务选一条主配方，再按需叠加 B-roll。  
+4. **可选即可选。** 付费模型相关能力永不混入默认路由。
+
+<br>
 
 ## License
 
-Each skill keeps its original license when present. Aggregator docs (README / CATALOG / EXCLUDED) are MIT.
+各 Skill 保留其原有许可证。本仓库聚合说明（README、CATALOG、EXCLUDED）采用 MIT。
+
+---
+
+<p align="center">
+  <sub>cutmax — Create more. Pay less for the path.</sub>
+</p>
