@@ -117,6 +117,7 @@ python3 "$STORY_VIDEO_PROJECT/scripts/run_story_video.py" \
 - `references/skill-catalog.md` — 全部技能索引
 - `references/recipes.md` — 本地配方 A–F
 - `references/platform-guide.md` — 平台选择与计费礼貌
+- `references/brand-presets.md` — 腾讯/阿里/字节/B站/Apple 等品牌视频风格
 - `references/free-stack.md` — 允许 / 禁止工具栈
 - `examples/prompts.md` — 中英示例 Prompt
 - `rules/stock-broll-workflow.md` — Pexels B-roll 自动工作流

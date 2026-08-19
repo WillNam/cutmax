@@ -19,7 +19,8 @@
 | 计费礼貌 | 无约定 | ✅ 扣费前说明并确认 |
 | B-roll 自动工作流 | 无 | ✅ Pexels 规则 + MANIFEST |
 | 示例 Prompt | 无 | ✅ 中英双语 |
-| 品牌视觉 | 无 | ✅ Apple 风封面 + 架构图 |
+| 品牌视觉 | 无 | ✅ 明亮创作者风封面 + 架构图 + 8 大品牌 logo |
+| 品牌风格预设 | ❌ | ✅ 腾讯/阿里/字节/B站/Apple/Spotify 等 |
 
 > **原则：** 本地把事做稳，平台把事做漂亮。不抵制大模型——为了成片更好而接入官方能力。
 
@@ -91,6 +92,7 @@ references/
   skill-catalog.md                # 全部技能索引
   recipes.md                      # 本地配方 A–F
   platform-guide.md               # 平台选择与计费礼貌
+  brand-presets.md                # 知名品牌视频风格预设
   free-stack.md                   # 允许 / 禁止工具栈
 examples/
   prompts.md                      # 中英示例 Prompt
