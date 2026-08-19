@@ -285,13 +285,9 @@ def main() -> None:
 
     sprites = args.sprites
     if sprites is None:
-        # Prefer skill assets, then proven trial sprites
         candidates = [
             DEFAULT_SPRITES,
-            Path(
-                "/Users/minnan/Projects/conan-digital-human/outputs/"
-                "skill-trials-2026-08-06/handdrawn/draw-alive-work/hand-sprites"
-            ),
+            Path(__file__).resolve().parents[3] / "tools" / "story-to-handdrawn-video" / "public" / "assets" / "hand-sprites",
         ]
         sprites = next((c for c in candidates if (c / "hand-pencil.png").exists()), None)
         if sprites is None:

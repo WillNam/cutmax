@@ -89,3 +89,9 @@ https://github.com/WillNam/cutmax
 ## 英文一句话（GitHub About）
 
 Local-first video skills for AI agents — with official Seedance, ChatCut, and Pireel when you need them.
+
+---
+
+## 作者
+
+Copyright © 2026 WillNam · https://github.com/WillNam/cutmax

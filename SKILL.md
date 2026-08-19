@@ -35,7 +35,7 @@ description: >
 ## When NOT to Use
 
 - 纯文案策划、与视频无关的任务
-- 用户只要静态 logo / 封面图（转 `gbro-cover-design` 或 `IPbuildlogo`）
+- 用户只要静态 logo / 封面图（转 `gbro-cover-design`）
 
 ## Hard Rules
 

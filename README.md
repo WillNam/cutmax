@@ -1,28 +1,30 @@
 # cutmax
 
-在本地 ffmpeg / Pillow / Remotion 基础上搭建的 **Agent 视频工作室 Skill**：照片→手绘动效、翻页日记、B-roll 插入、口播整理，并内置 **19 个本地技能 + 4 个官方平台**（Seedance、ChatCut、Pireel），方便 Agent 从本地保底到平台拔高一条链路跑通。
+**WillNam 出品的 Agent 视频工作室。**
 
-**仓库地址：** https://github.com/WillNam/cutmax
+本地地基，官方加持。为 Codex / Cursor 设计的剪辑与素材技能包——照片→手绘动效、翻页日记、B-roll 插入、口播整理，内置 **19 个本地技能 + 4 个官方平台**（Seedance、ChatCut、Pireel），一条链路从本地保底到平台拔高。
+
+**仓库：** https://github.com/WillNam/cutmax
 
 遵循开放 Agent Skills 格式，兼容 Codex、Cursor 等 Agent 环境。
 
 ![cutmax showcase](assets/cutmax-hero-dark.png)
 
-## 相比零散技能的增强
+## 核心能力
 
-| 能力 | 零散 skill | cutmax |
-|------|-----------|--------|
-| 统一路由中枢 | ❌ | ✅ 根 SKILL.md 一键路由 |
-| 照片→手在画→成稿 | 需自己拼 | ✅ Recipe A 脚本 + 反「一张图」规则 |
-| 手绘翻页日记 | 单独装 | ✅ Remotion 工程内置 |
-| 平台集成 | 各找各的 | ✅ Seedance / ChatCut / Pireel 一等公民 |
-| 计费礼貌 | 无约定 | ✅ 扣费前说明并确认 |
-| B-roll 自动工作流 | 无 | ✅ Pexels 规则 + MANIFEST |
-| 示例 Prompt | 无 | ✅ 中英双语 |
-| 品牌视觉 | 无 | ✅ 明亮创作者风封面 + 架构图 + 8 大品牌 logo |
-| 品牌风格预设 | ❌ | ✅ 腾讯/阿里/字节/B站/Apple/Spotify 等 |
+| 能力 | 说明 |
+|------|------|
+| 统一路由 | 根 `SKILL.md` 一键分发全部视频任务 |
+| 照片→手在画→成稿 | Recipe A 脚本 + 反「一张图」规则 |
+| 手绘翻页日记 | 内置 Remotion 工程 |
+| 平台集成 | Seedance / ChatCut / Pireel 一等公民 |
+| 计费礼貌 | 扣费前说明并确认 |
+| B-roll 工作流 | Pexels 规则 + MANIFEST |
+| 示例 Prompt | 中英双语 |
+| 品牌视觉 | 明亮创作者风封面 + 架构图 |
+| 品牌风格预设 | 腾讯 / 阿里 / 字节 / B站 / Apple / Spotify 等 |
 
-> **原则：** 本地把事做稳，平台把事做漂亮。不抵制大模型——为了成片更好而接入官方能力。
+> **原则：** 本地把事做稳，平台把事做漂亮。
 
 ## 安装
 
@@ -122,6 +124,8 @@ LICENSE
 
 <img src="assets/cutmax-architecture.png" alt="skills 本地地基 + platforms 官方加持" width="100%" />
 
-## License
+## 作者
 
-MIT — 见 [LICENSE](LICENSE)
+Copyright © 2026 [WillNam](https://github.com/WillNam)
+
+MIT License — 见 [LICENSE](LICENSE)

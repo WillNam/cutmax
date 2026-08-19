@@ -100,6 +100,7 @@ Tell me estimated cost before proceeding.
 | "即梦生成" | platforms/seedance2 |
 | "ChatCut 精修" | platforms/chatcut |
 | "竖版口播图文" | platforms/pireel |
+| "腾讯/Apple 风格短视频" | references/brand-presets.md |
 | "封面设计" | gbro-cover-design |
 | "数学动画" | manim-video |
 
