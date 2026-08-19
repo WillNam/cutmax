@@ -8,13 +8,9 @@
 
 <h1>video-shotcraft</h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/Vincentwei1021/video-shotcraft)](https://github.com/Vincentwei1021/video-shotcraft/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Vincentwei1021/video-shotcraft)](https://github.com/Vincentwei1021/video-shotcraft/network/members)
-[![Gallery](https://img.shields.io/badge/Gallery-在线样片-d3923c)](https://vincentwei1021.github.io/video-shotcraft/)
-[![AtomGit Star](https://atomgit.com/VincentWei/video-shotcraft/star/badge.svg)](https://atomgit.com/VincentWei/video-shotcraft)
-
-<a href="https://trendshift.io/repositories/88911?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-88911" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/88911/daily?language=TypeScript" alt="Vincentwei1021%2Fvideo-shotcraft | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/88911?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-88911" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/88911/weekly?language=TypeScript" alt="Vincentwei1021%2Fvideo-shotcraft | Trendshift" width="250" height="55"/></a>
+[![GitHub stars](https://img.shields.io/github/stars/WillNam/cutmax)](https://github.com/WillNam/cutmax/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/WillNam/cutmax)](https://github.com/WillNam/cutmax/network/members)
+[![Gallery](https://img.shields.io/badge/Gallery-在线样片-d3923c)](https://github.com/WillNam/cutmax/)
 
 **让 agent 帮你制作电影感产品视频的 skill：104 张镜头配方卡 · 161 个样式 · 161 条动态样片 · 已验收成片模板**
 
@@ -27,7 +23,7 @@
 和声音设计，产出一支电影感的宣传片 / 营销视频 / 发布视频 / 功能演示——
 真实页面截图、2.5D 运镜、节奏卡点和电影级 SFX 全部包含。
 
-🖼️ [**在线 Gallery：浏览全部 161 条动态样片 »**](https://vincentwei1021.github.io/video-shotcraft/)
+🖼️ [**在线 Gallery：浏览全部 161 条动态样片 »**](https://github.com/WillNam/cutmax/)
 
 ## 🎬 效果预览
 
@@ -38,7 +34,7 @@ https://github.com/user-attachments/assets/cba2df8a-4b2e-4247-bace-d0b1dea9c2bd
 
 ▶️ [在 YouTube 观看高清版](https://youtu.be/gcVvRM_P3SM)
 
-> 在线浏览全部镜头卡与动态样片：**[Gallery](https://vincentwei1021.github.io/video-shotcraft/)**
+> 在线浏览全部镜头卡与动态样片：**[Gallery](https://github.com/WillNam/cutmax/)**
 > —— 支持搜索、筛选、切换样式和多选复制镜头卡名称。
 
 ## 🚀 快速开始
@@ -47,18 +43,18 @@ https://github.com/user-attachments/assets/cba2df8a-4b2e-4247-bace-d0b1dea9c2bd
 在 Claude Code / Codex 等 agent 里说：
 
 ```text
-帮我安装这个 skill：https://github.com/Vincentwei1021/video-shotcraft
+帮我安装这个 skill：https://github.com/WillNam/cutmax
 ```
 
 agent 会克隆仓库并链接到 skills 目录。也可以用 [skills](https://skills.sh/) CLI
 或手动安装：
 
 ```bash
-npx skills add Vincentwei1021/video-shotcraft
+npx skills add WillNam/cutmax
 ```
 
 ```bash
-git clone https://github.com/Vincentwei1021/video-shotcraft.git
+git clone https://github.com/WillNam/cutmax.git
 cd video-shotcraft
 ln -s "$(pwd)" ~/.claude/skills/video-shotcraft   # Claude Code
 # 或
@@ -74,7 +70,7 @@ ln -s "$(pwd)" ~/.codex/skills/video-shotcraft    # Codex
 ```
 
 如果没有指定镜头卡，skill 会先介绍现成成片模板并询问是否采用；
-也可以先在 [Gallery](https://vincentwei1021.github.io/video-shotcraft/) 里挑好镜头再开始。
+也可以先在 [Gallery](https://github.com/WillNam/cutmax/) 里挑好镜头再开始。
 
 ## 📼 成片模板：Ink Press（墨压）
 
@@ -175,34 +171,3 @@ video-shotcraft/
 | 2026-07-27 | 画廊卡片支持多类别标签；All 视图改为平铺、按字母排序；补回 GridWaveFlip 与 WireframeDrawOn 源码 |
 | 2026-07-26 | 画廊自动部署到 GitHub Pages；样片 mp4 移出 git 改存 release，仓库瘦身 |
 
-## 🙏 致谢
-
-本库中许多镜头配方源自对优秀官方产品宣传片动效语言的研究学习——包括
-**ClickUp、Perplexity、Slack、Notion、Figma、Framer、Bear、Raycast、
-Pitch、Miro、Superhuman、Loom** 等产品的宣传片。镜头卡记录的是从零重新
-实现的动效技法（时序、缓动、编排）；仓库中不包含上述影片的任何素材、
-画面或品牌资产。所有商标归各自所有者所有，上述公司与本项目无关联、
-亦未对本项目背书。
-
-特别感谢：
-
-- **[Remotion](https://www.remotion.dev/)** —— 驱动本库全部 demo 与模板的
-  React 视频框架。请注意 Remotion 有自己的
-  [许可协议](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md)
-  （个人与小团队免费，公司可能需要付费许可）。
-- **[Mixkit](https://mixkit.co/)** —— 库内 SFX 与音乐素材的来源
-  （免费商用授权）。
-- 游戏手感与动画社区的公开方法论（如 Vlambeer 的 screenshake 演讲、
-  经典动画时序原则），多张镜头卡受其启发。
-- **Claude Code** —— 本库自身的构建、迭代与验收全程由 AI coding agent
-  完成，用的正是这个 skill 所传授的工作流。
-
-## ⭐ Star 历史
-
-<a href="https://www.star-history.com/?repos=Vincentwei1021%2Fvideo-shotcraft&type=date&legend=top-left">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&theme=dark&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-  </picture>
-</a>

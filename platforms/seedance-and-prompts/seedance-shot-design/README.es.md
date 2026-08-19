@@ -55,7 +55,7 @@ Coloca la carpeta `seedance-shot-design/` en `.claude/skills/` en la raíz de tu
 
 ```bash
 # Clonar en el directorio de Skills del proyecto
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .claude/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .claude/skills/seedance-shot-design
 ```
 
 Claude Code detectará y cargará el Skill automáticamente.
@@ -67,7 +67,7 @@ Claude Code detectará y cargará el Skill automáticamente.
 En tu app de mensajería conectada (WeChat, Feishu, etc.), envía un mensaje al Agent de OpenClaw:
 
 ```
-Por favor, aprende este skill: https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills
+Por favor, aprende este skill: https://github.com/WillNam/cutmax
 ```
 
 El Agent descargará y aprenderá el skill Seedance Shot Design automáticamente. Puedes empezar a hacer solicitudes de inmediato.
@@ -79,7 +79,7 @@ El Agent descargará y aprenderá el skill Seedance Shot Design automáticamente
 Coloca la carpeta del Skill en el directorio de instrucciones de agents de Codex:
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git agents/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git agents/skills/seedance-shot-design
 ```
 
 Luego invócalo dentro de una conversación de Codex.
@@ -91,7 +91,7 @@ Luego invócalo dentro de una conversación de Codex.
 Coloca la carpeta del Skill en `.cursor/skills/` en la raíz de tu proyecto:
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .cursor/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .cursor/skills/seedance-shot-design
 ```
 
 El modo Agent de Cursor leerá las instrucciones del Skill automáticamente.

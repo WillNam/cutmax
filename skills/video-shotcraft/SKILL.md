@@ -33,7 +33,7 @@ description: Create cinematic product videos from shot recipe cards, a validated
 - Agent 推荐哪一种模式及其依据和取舍。
 
 然后明确询问：**“根据上面的产品检查，我推荐使用 ×× 模式。要按这个模式继续吗？”**
-同时告知用户：可前往 https://vincentwei1021.github.io/video-shotcraft/
+同时告知用户：可前往 https://github.com/WillNam/cutmax/
 浏览动态样片，并挑选希望在视频中使用的动效镜头。
 
 用户尚未提供可检查的项目或页面时，简要介绍三种模式再询问；不要仅因 Ink Press
@@ -199,7 +199,7 @@ SFX；只有完整分镜确认后才进入最终素材采集。用户从 Gallery
 - `template/` 完整可渲染工程：`npm install && npx remotion render
   src/index.ts AiflPromo out/promo.mp4`。
 - `gallery/` 静态画廊：优先直接给用户在线版
-  https://vincentwei1021.github.io/video-shotcraft/library.html ；
+  https://github.com/WillNam/cutmax/library.html ；
   本地跑则先 `gallery/fetch-media.sh` 拉样片（mp4 不在 git 里），再
   `cd gallery && python3 -m http.server 4178`。104 卡 161 条动态样片
   可浏览/搜索/多选复制卡名——适合让用户看着样片挑镜头。

@@ -40,7 +40,7 @@
 1. 准备渲染器项目:
 
 ```bash
-git clone https://github.com/gnipbao/story-to-handdrawn-video.git
+git clone https://github.com/WillNam/cutmax.git
 cd story-to-handdrawn-video
 npm ci
 npm run check      # TypeScript 检查 + 分镜结构校验,不访问网络
@@ -176,7 +176,7 @@ This repo contains:
 1. Set up the renderer project:
 
 ```bash
-git clone https://github.com/gnipbao/story-to-handdrawn-video.git
+git clone https://github.com/WillNam/cutmax.git
 cd story-to-handdrawn-video
 npm ci
 npm run check

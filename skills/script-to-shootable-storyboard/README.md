@@ -49,7 +49,7 @@
 将项目克隆到 Codex Skills 目录：
 
 ```powershell
-git clone https://github.com/zyz254009-crypto/script-to-shootable-storyboard.git "$env:USERPROFILE\.codex\skills\script-to-shootable-storyboard"
+git clone https://github.com/WillNam/cutmax.git "$env:USERPROFILE\.codex\skills\script-to-shootable-storyboard"
 ```
 
 重新打开 Codex 任务后，可通过 `$script-to-shootable-storyboard` 调用。

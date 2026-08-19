@@ -55,7 +55,7 @@
 
 ```bash
 # 프로젝트의 Skill 디렉토리에 클론
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .claude/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .claude/skills/seedance-shot-design
 ```
 
 Claude Code가 자동으로 Skill을 감지하고 로드합니다.
@@ -67,7 +67,7 @@ Claude Code가 자동으로 Skill을 감지하고 로드합니다.
 연동된 IM 앱(위챗, 페이슈 등)에서 OpenClaw Agent에게 메시지를 보냅니다:
 
 ```
-이 스킬을 학습해 주세요: https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills
+이 스킬을 학습해 주세요: https://github.com/WillNam/cutmax
 ```
 
 Agent가 자동으로 Seedance Shot Design 스킬을 가져와 학습합니다. 바로 요청을 시작할 수 있습니다.
@@ -79,7 +79,7 @@ Agent가 자동으로 Seedance Shot Design 스킬을 가져와 학습합니다. 
 Skill 폴더를 Codex의 agents 지시 디렉토리에 배치합니다:
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git agents/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git agents/skills/seedance-shot-design
 ```
 
 Codex 대화에서 호출할 수 있습니다.
@@ -91,7 +91,7 @@ Codex 대화에서 호출할 수 있습니다.
 Skill 폴더를 프로젝트 루트의 `.cursor/skills/` 아래에 배치합니다:
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .cursor/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .cursor/skills/seedance-shot-design
 ```
 
 Cursor Agent 모드에서 자동으로 Skill 지시를 읽어들입니다.

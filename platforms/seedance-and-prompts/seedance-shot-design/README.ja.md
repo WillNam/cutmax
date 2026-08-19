@@ -55,7 +55,7 @@
 
 ```bash
 # プロジェクトの Skill ディレクトリにクローン
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .claude/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .claude/skills/seedance-shot-design
 ```
 
 Claude Code が自動的に Skill を検出してロードします。
@@ -67,7 +67,7 @@ Claude Code が自動的に Skill を検出してロードします。
 連携済みの IM アプリ（WeChat、飛書など）で、OpenClaw Agent にメッセージを送信します：
 
 ```
-このスキルを学習してください：https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills
+このスキルを学習してください：https://github.com/WillNam/cutmax
 ```
 
 Agent が自動的に Seedance Shot Design スキルを取得・習得します。すぐにリクエストを開始できます。
@@ -79,7 +79,7 @@ Agent が自動的に Seedance Shot Design スキルを取得・習得します�
 Skill フォルダを Codex の agents 指示ディレクトリに配置します：
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git agents/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git agents/skills/seedance-shot-design
 ```
 
 Codex の会話内で呼び出せます。
@@ -91,7 +91,7 @@ Codex の会話内で呼び出せます。
 Skill フォルダをプロジェクトルートの `.cursor/skills/` に配置します：
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .cursor/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .cursor/skills/seedance-shot-design
 ```
 
 Cursor Agent モードで自動的に Skill 指示を読み込みます。

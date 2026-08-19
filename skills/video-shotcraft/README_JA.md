@@ -8,13 +8,9 @@
 
 <h1>video-shotcraft</h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/Vincentwei1021/video-shotcraft)](https://github.com/Vincentwei1021/video-shotcraft/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Vincentwei1021/video-shotcraft)](https://github.com/Vincentwei1021/video-shotcraft/network/members)
-[![Gallery](https://img.shields.io/badge/Gallery-live%20previews-d3923c)](https://vincentwei1021.github.io/video-shotcraft/)
-[![AtomGit Star](https://atomgit.com/VincentWei/video-shotcraft/star/badge.svg)](https://atomgit.com/VincentWei/video-shotcraft)
-
-<a href="https://trendshift.io/repositories/88911?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-88911" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/88911/daily?language=TypeScript" alt="Vincentwei1021%2Fvideo-shotcraft | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/88911?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-88911" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/88911/weekly?language=TypeScript" alt="Vincentwei1021%2Fvideo-shotcraft | Trendshift" width="250" height="55"/></a>
+[![GitHub stars](https://img.shields.io/github/stars/WillNam/cutmax)](https://github.com/WillNam/cutmax/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/WillNam/cutmax)](https://github.com/WillNam/cutmax/network/members)
+[![Gallery](https://img.shields.io/badge/Gallery-live%20previews-d3923c)](https://github.com/WillNam/cutmax/)
 
 **映画のような製品動画を制作するためのエージェントスキル：104 種類のショットレシピカード · 161 種類のスタイル · 161 本のモーションプレビュー · 実制作に対応したテンプレート**
 
@@ -28,7 +24,7 @@
 マーケティング、ローンチ、デモ動画を制作します。実際のページキャプチャ、2.5D カメラワーク、
 ビートに同期したカット、映画品質の SFX も含まれます。
 
-🖼️ [**ライブ Gallery で 161 本のモーションプレビューをすべて見る »**](https://vincentwei1021.github.io/video-shotcraft/)
+🖼️ [**ライブ Gallery で 161 本のモーションプレビューをすべて見る »**](https://github.com/WillNam/cutmax/)
 
 ## 🎬 ショーケース
 
@@ -40,7 +36,7 @@ https://github.com/user-attachments/assets/cba2df8a-4b2e-4247-bace-d0b1dea9c2bd
 
 ▶️ [YouTube で HD 版を見る](https://youtu.be/gcVvRM_P3SM)
 
-> すべてのショットカードとモーションプレビューをオンラインで閲覧：**[Gallery](https://vincentwei1021.github.io/video-shotcraft/)**
+> すべてのショットカードとモーションプレビューをオンラインで閲覧：**[Gallery](https://github.com/WillNam/cutmax/)**
 > — 検索、絞り込み、バリエーションの切り替え、選択したショットカード名のコピーが可能です。
 
 ## 🚀 クイックスタート
@@ -49,18 +45,18 @@ https://github.com/user-attachments/assets/cba2df8a-4b2e-4247-bace-d0b1dea9c2bd
 Claude Code、Codex、または同様のエージェントで、次のように伝えます。
 
 ```text
-Install this skill for me: https://github.com/Vincentwei1021/video-shotcraft
+Install this skill for me: https://github.com/WillNam/cutmax
 ```
 
 エージェントがリポジトリをクローンし、スキルディレクトリにリンクします。または、
 [skills](https://skills.sh/) CLI を使うか、手動でインストールします。
 
 ```bash
-npx skills add Vincentwei1021/video-shotcraft
+npx skills add WillNam/cutmax
 ```
 
 ```bash
-git clone https://github.com/Vincentwei1021/video-shotcraft.git
+git clone https://github.com/WillNam/cutmax.git
 cd video-shotcraft
 ln -s "$(pwd)" ~/.claude/skills/video-shotcraft   # Claude Code
 # or
@@ -77,7 +73,7 @@ Design a product close-up inspired by spotlight-hero-card.
 
 ショットカードを指定しない場合、スキルは最初に内蔵の動画テンプレートを
 紹介し、それを使うか確認します。作業を始める前に
-[Gallery](https://vincentwei1021.github.io/video-shotcraft/) でショットを選ぶこともできます。
+[Gallery](https://github.com/WillNam/cutmax/) でショットを選ぶこともできます。
 
 ## 📼 動画テンプレート：Ink Press
 
@@ -183,35 +179,3 @@ video-shotcraft/
 | 2026-07-27 | ギャラリーカードが複数カテゴリタグに対応。All ビューをフラット化しアルファベット順に整列。GridWaveFlip と WireframeDrawOn のソースを復元 |
 | 2026-07-26 | ギャラリーを GitHub Pages へ自動デプロイ。プレビュー mp4 を git から release へ移動しリポジトリを軽量化 |
 
-## 🙏 謝辞
-
-このライブラリの多くのショットレシピは、優れた公式製品動画のモーション表現を
-研究してまとめたものです。対象には **ClickUp、Perplexity、Slack、Notion、
-Figma、Framer、Bear、Raycast、Pitch、Miro、Superhuman、Loom** のプロモーションが
-含まれます。カードには、ゼロから再実装したモーション技法
-（タイミング、イージング、振り付け）を記載しています。これらの動画の映像、アートワーク、
-ブランドアセットはリポジトリに含まれません。すべての商標は各所有者に帰属し、
-各社は本プロジェクトと提携しておらず、また本プロジェクトを推奨していません。
-
-特に以下のプロジェクトとコミュニティに感謝します。
-
-- **[Remotion](https://www.remotion.dev/)** — すべてのデモとテンプレートを支える
-  React ベースの動画フレームワークです。Remotion には独自の
-  [ライセンス](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md)
-  がある点に注意してください（個人と小規模チームは無料、企業は有料ライセンスが必要な場合があります）。
-- **[Mixkit](https://mixkit.co/)** — 無料の商用ライセンスで収録されている
-  SFX と音楽アセットの提供元です。
-- 複数のカードに影響を与えた、ゲームフィールとアニメーションのコミュニティが公開する原則
-  （Vlambeer のスクリーンシェイクに関する講演、古典的なアニメーションのタイミングなど）。
-- **Claude Code** — このライブラリ自体も、スキルが教えるものと同じワークフローを使い、
-  AI コーディングエージェントによって構築、反復改善、QA されました。
-
-## ⭐ Star 履歴
-
-<a href="https://www.star-history.com/?repos=Vincentwei1021%2Fvideo-shotcraft&type=date&legend=top-left">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&theme=dark&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-  </picture>
-</a>

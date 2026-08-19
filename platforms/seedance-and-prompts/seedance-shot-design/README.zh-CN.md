@@ -59,7 +59,7 @@
 
 ```bash
 # 克隆到项目的 Skill 目录
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .claude/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .claude/skills/seedance-shot-design
 ```
 
 Claude Code 会自动识别并加载该 Skill。
@@ -71,7 +71,7 @@ Claude Code 会自动识别并加载该 Skill。
 在你绑定的 IM（如微信、飞书等）中，直接对 OpenClaw Agent 发一条消息：
 
 ```
-请学习这个技能：https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills
+请学习这个技能：https://github.com/WillNam/cutmax
 ```
 
 Agent 会自动拉取并学会 Seedance Shot Design 技能，之后你就可以直接向它提需求了。
@@ -83,7 +83,7 @@ Agent 会自动拉取并学会 Seedance Shot Design 技能，之后你就可以�
 将 Skill 文件夹放入 Codex 的 agents 指令目录：
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git agents/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git agents/skills/seedance-shot-design
 ```
 
 在 Codex 对话中即可调用。
@@ -95,7 +95,7 @@ git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git agent
 将 Skill 文件夹放入项目根目录的 `.cursor/skills/` 下：
 
 ```bash
-git clone https://github.com/woodfantasy/Seedance2.0-ShotDesign-Skills.git .cursor/skills/seedance-shot-design
+git clone https://github.com/WillNam/cutmax.git .cursor/skills/seedance-shot-design
 ```
 
 Cursor Agent 模式下会自动读取该 Skill 指令。

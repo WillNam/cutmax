@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Craft cinematic product videos with Remotion using shot recipes, motion previews, reusable components, SFX, and a production-ready template.",
   "author": {
-    "name": "Wei Yihao"
+    "name": "WillNam"
   },
-  "homepage": "https://vincentwei1021.github.io/video-shotcraft/",
-  "repository": "https://github.com/Vincentwei1021/video-shotcraft",
+  "homepage": "https://github.com/WillNam/cutmax/",
+  "repository": "https://github.com/WillNam/cutmax",
   "license": "Apache-2.0",
   "keywords": [
     "video",

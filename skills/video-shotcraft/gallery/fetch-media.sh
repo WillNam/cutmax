@@ -5,7 +5,7 @@
 set -euo pipefail
 cd "$(dirname "$0")"
 gh release download gallery-media \
-  --repo Vincentwei1021/video-shotcraft \
+  --repo WillNam/cutmax \
   --dir media \
   --pattern '*.mp4' \
   --clobber

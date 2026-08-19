@@ -8,13 +8,9 @@
 
 <h1>video-shotcraft</h1>
 
-[![GitHub stars](https://img.shields.io/github/stars/Vincentwei1021/video-shotcraft)](https://github.com/Vincentwei1021/video-shotcraft/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/Vincentwei1021/video-shotcraft)](https://github.com/Vincentwei1021/video-shotcraft/network/members)
-[![Gallery](https://img.shields.io/badge/Gallery-live%20previews-d3923c)](https://vincentwei1021.github.io/video-shotcraft/)
-[![AtomGit Star](https://atomgit.com/VincentWei/video-shotcraft/star/badge.svg)](https://atomgit.com/VincentWei/video-shotcraft)
-
-<a href="https://trendshift.io/repositories/88911?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-88911" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/88911/daily?language=TypeScript" alt="Vincentwei1021%2Fvideo-shotcraft | Trendshift" width="250" height="55"/></a>
-<a href="https://trendshift.io/repositories/88911?utm_source=trendshift-badge&utm_medium=badge&utm_campaign=badge-trendshift-88911" target="_blank" rel="noopener noreferrer"><img src="https://trendshift.io/api/badge/trendshift/repositories/88911/weekly?language=TypeScript" alt="Vincentwei1021%2Fvideo-shotcraft | Trendshift" width="250" height="55"/></a>
+[![GitHub stars](https://img.shields.io/github/stars/WillNam/cutmax)](https://github.com/WillNam/cutmax/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/WillNam/cutmax)](https://github.com/WillNam/cutmax/network/members)
+[![Gallery](https://img.shields.io/badge/Gallery-live%20previews-d3923c)](https://github.com/WillNam/cutmax/)
 
 **An agent skill for crafting cinematic product videos: 104 shot recipe cards · 161 styles · 161 motion previews · a production-ready template**
 
@@ -28,7 +24,7 @@ sound-designs a cinematic promo, marketing, launch, or demo video with
 [Remotion](https://www.remotion.dev/) — real page captures, 2.5D camera moves,
 beat-synced cuts, and film-grade SFX included.
 
-🖼️ [**Browse all 161 motion previews in the live Gallery »**](https://vincentwei1021.github.io/video-shotcraft/)
+🖼️ [**Browse all 161 motion previews in the live Gallery »**](https://github.com/WillNam/cutmax/)
 
 ## 🎬 Showcase
 
@@ -40,7 +36,7 @@ https://github.com/user-attachments/assets/cba2df8a-4b2e-4247-bace-d0b1dea9c2bd
 
 ▶️ [Watch in HD on YouTube](https://youtu.be/gcVvRM_P3SM)
 
-> Browse every shot card and motion preview online: **[Gallery](https://vincentwei1021.github.io/video-shotcraft/)**
+> Browse every shot card and motion preview online: **[Gallery](https://github.com/WillNam/cutmax/)**
 > — search, filter, switch between variants, and copy selected shot-card names.
 
 ## 🚀 Quick start
@@ -49,18 +45,18 @@ https://github.com/user-attachments/assets/cba2df8a-4b2e-4247-bace-d0b1dea9c2bd
 In Claude Code / Codex or a similar agent, just say:
 
 ```text
-Install this skill for me: https://github.com/Vincentwei1021/video-shotcraft
+Install this skill for me: https://github.com/WillNam/cutmax
 ```
 
 The agent will clone the repo and link it into your skills directory. Or install
 with the [skills](https://skills.sh/) CLI / manually:
 
 ```bash
-npx skills add Vincentwei1021/video-shotcraft
+npx skills add WillNam/cutmax
 ```
 
 ```bash
-git clone https://github.com/Vincentwei1021/video-shotcraft.git
+git clone https://github.com/WillNam/cutmax.git
 cd video-shotcraft
 ln -s "$(pwd)" ~/.claude/skills/video-shotcraft   # Claude Code
 # or
@@ -77,7 +73,7 @@ Design a product close-up inspired by spotlight-hero-card.
 
 If no shot card is specified, the skill introduces the built-in video template
 first and asks whether to use it; you can also pick shots in the
-[Gallery](https://vincentwei1021.github.io/video-shotcraft/) before starting.
+[Gallery](https://github.com/WillNam/cutmax/) before starting.
 
 ## 📼 Video template: Ink Press
 
@@ -181,35 +177,3 @@ customer, or personal data needs to be anonymized.
 | 2026-07-27 | Gallery cards support multi-category tags; flat, alphabetically sorted All view; recovered GridWaveFlip and WireframeDrawOn sources |
 | 2026-07-26 | Gallery auto-deploys to GitHub Pages; preview mp4s moved out of git to a release, slimming the repo |
 
-## 🙏 Acknowledgements
-
-Many shot recipes in this library were distilled by studying the motion language
-of outstanding official product films — including promos from **ClickUp,
-Perplexity, Slack, Notion, Figma, Framer, Bear, Raycast, Pitch, Miro, Superhuman,
-and Loom**. The cards document motion techniques (timing, easing, choreography)
-re-implemented from scratch; no footage, artwork, or brand assets from these
-films are included in this repository. All trademarks belong to their respective
-owners, and none of these companies are affiliated with or endorse this project.
-
-Special thanks to:
-
-- **[Remotion](https://www.remotion.dev/)** — the React-based video framework
-  that powers every demo and template here. Note that Remotion has its own
-  [license](https://github.com/remotion-dev/remotion/blob/main/LICENSE.md)
-  (free for individuals and small teams; companies may need a paid license).
-- **[Mixkit](https://mixkit.co/)** — source of the SFX and music assets bundled
-  under their free commercial license.
-- The game-feel and animation communities whose published principles (e.g.
-  Vlambeer's screenshake talks, classic animation timing) inform several cards.
-- **Claude Code** — this library itself was built, iterated, and QA'd with an
-  AI coding agent, using the same workflow the skill teaches.
-
-## ⭐ Star history
-
-<a href="https://www.star-history.com/?repos=Vincentwei1021%2Fvideo-shotcraft&type=date&legend=top-left">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&theme=dark&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-    <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=Vincentwei1021/video-shotcraft&type=date&legend=top-left&sealed_token=DQ8_yn0k8in6tP80CRd9Ghuk1fcdEW7poFh9ticGB3wMNO-E_i6g51sUiQWCAQYP0u0bjRweuIfGoRS8FnrIz86oFp1lcl5zu2vrEJrQOoNvwdUSwmm8XNPkAiln1o-EBAX0uU8k6ReIlSRufGLqpoxsWshMSZ9mmok6ox5XXIUO77b7zOgp2yRIH6yR" />
-  </picture>
-</a>

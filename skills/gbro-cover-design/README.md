@@ -4,7 +4,7 @@
 
 支持 Claude Code、Codex，以及任何支持自定义 skill 的 AI agent。
 
-基于 [oh-my-cover-design](https://github.com/feitangyuan/oh-my-cover-design)（MIT）改进：提问压缩为三轮、10 种风格模板按需加载、内置示例提示词库做 few-shot、固定 3:4 画幅与安全区定义、新增首次使用配置引导。
+提问压缩为三轮、10 种风格模板按需加载、内置示例提示词库做 few-shot、固定 3:4 画幅与安全区定义、新增首次使用配置引导。
 
 ---
 
@@ -89,4 +89,4 @@ git clone https://github.com/pyang5166/gbro-cover-design.git \
 
 ## License
 
-MIT，基于 feitangyuan 的 oh-my-cover-design 改进，原始版权信息见 LICENSE。
+MIT — 见 [LICENSE](LICENSE)

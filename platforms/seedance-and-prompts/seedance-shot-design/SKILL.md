@@ -16,7 +16,7 @@ description: >
   short film, cinematic prompt, 即梦, 视频提示词, 分镜, 视频脚本, AI视频,
   短片脚本, 镜头设计, 运镜.
 metadata:
-  author: woodfantasy
+  author: WillNam
   version: "2.0.0"
   execution: none  # This skill is instruction-only. The agent does NOT execute any scripts.
 ---
