@@ -1,181 +1,125 @@
-<div align="center">
+# cutmax
 
-<img src="brand/cutmax-hero-dark.png" alt="cutmax" width="100%" />
+在本地 ffmpeg / Pillow / Remotion 基础上搭建的 **Agent 视频工作室 Skill**：照片→手绘动效、翻页日记、B-roll 插入、口播整理，并内置 **19 个本地技能 + 4 个官方平台**（Seedance、ChatCut、Pireel），方便 Agent 从本地保底到平台拔高一条链路跑通。
 
-<br/>
+**仓库地址：** https://github.com/WillNam/cutmax
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-black.svg)](LICENSE)
-[![Agent: Claude / Codex / Cursor](https://img.shields.io/badge/Agent-Claude%20%2F%20Codex%20%2F%20Cursor-black)](https://github.com/WillNam/cutmax)
-[![Stack: ffmpeg · Pillow · Remotion](https://img.shields.io/badge/Stack-ffmpeg%20%C2%B7%20Pillow%20%C2%B7%20Remotion-black)](skills/)
-[![Platforms: Seedance · ChatCut · Pireel](https://img.shields.io/badge/Platforms-Seedance%20%C2%B7%20ChatCut%20%C2%B7%20Pireel-black)](platforms/)
+遵循开放 Agent Skills 格式，兼容 Codex、Cursor 等 Agent 环境。
 
-</div>
+![cutmax showcase](assets/cutmax-hero-dark.png)
 
----
+## 相比零散技能的增强
 
-<div align="center">
+| 能力 | 零散 skill | cutmax |
+|------|-----------|--------|
+| 统一路由中枢 | ❌ | ✅ 根 SKILL.md 一键路由 |
+| 照片→手在画→成稿 | 需自己拼 | ✅ Recipe A 脚本 + 反「一张图」规则 |
+| 手绘翻页日记 | 单独装 | ✅ Remotion 工程内置 |
+| 平台集成 | 各找各的 | ✅ Seedance / ChatCut / Pireel 一等公民 |
+| 计费礼貌 | 无约定 | ✅ 扣费前说明并确认 |
+| B-roll 自动工作流 | 无 | ✅ Pexels 规则 + MANIFEST |
+| 示例 Prompt | 无 | ✅ 中英双语 |
+| 品牌视觉 | 无 | ✅ Apple 风封面 + 架构图 |
 
-**本地地基，官方加持。给 Agent 用的剪辑与素材技能包。**
+> **原则：** 本地把事做稳，平台把事做漂亮。不抵制大模型——为了成片更好而接入官方能力。
 
-为 [Claude Code](https://claude.ai/code) / [Codex](https://openai.com/codex) / [Cursor](https://cursor.sh) 设计的视频制作技能集合。  
-默认能力跑在你的电脑上；需要更强成片时，正式接入官方平台——不是抵制，是为了做得更好。
+## 安装
 
-</div>
-
----
-
-## 能做什么
-
-<img src="brand/cutmax-feature-draw.png" alt="照片变成有过程的成片" width="100%" />
-
-<br/>
-
-<img src="brand/cutmax-architecture.png" alt="skills 本地地基 + platforms 官方加持" width="100%" />
-
-<br/>
-
-| 场景 | 技能 | 工具 |
-|------|------|------|
-| 照片 → 手绘动效成片 | `story-to-handdrawn-video` | Remotion + ffmpeg + Pillow |
-| 脚本 → 可拍摄分镜 | `script-to-shootable-storyboard` | Pillow + ffmpeg |
-| Manim 数学动画视频 | `manim-video` | Manim |
-| 短视频脚本 + 运镜 | `self-media-short-video` + `video-shotcraft` | — |
-| 封面设计 | `gbro-cover-design` + `xhs-visual-director-skill` | Pillow / ImageMagick |
-| 视频裁剪 + 混剪 | `baocut` | BaoCut |
-| 内容分发 & 排期 | `video-publisher` + `self-media-content-delivery` | — |
-| 即梦 AI 视频生成 | `platforms/seedance2` | Seedance 官方 API |
-| ChatCut 专业剪辑 | `platforms/chatcut` | ChatCut 官方 |
-| Pireel 竖版成片 | `platforms/pireel` | Pireel 官方 |
-
----
-
-## 结构
-
-```
-cutmax/
-├── skills/          # 本地地基 — ffmpeg · Pillow · Remotion · BaoCut
-│   ├── local-video-studio/        ← 主控技能，从这里开始
-│   ├── story-to-handdrawn-video/  ← 照片→手绘动效
-│   ├── baocut/                    ← 智能剪辑
-│   ├── manim-video/               ← 数学动画
-│   ├── video-shotcraft/           ← 运镜设计
-│   ├── self-media-short-video/    ← 短视频脚本
-│   └── ...（共 19 个技能）
-│
-├── platforms/       # 官方加持 — 需平台账号，计费前确认
-│   ├── seedance2/            ← 即梦视频生成
-│   ├── chatcut/              ← ChatCut 专业剪辑
-│   ├── pireel/               ← Pireel 竖版成片
-│   └── seedance-and-prompts/ ← 即梦系 Prompt Pack
-│
-├── tools/           # 本地工具源码
-│   └── story-to-handdrawn-video/  ← Remotion 项目
-│
-├── rules/           # Agent 规则
-│   └── stock-broll-workflow.md    ← Pexels B-roll 自动工作流
-│
-├── scripts/         # 安装助手
-│   ├── link-skills.sh
-│   └── link-platforms.sh
-│
-└── brand/           # 品牌资产
+```bash
+npx skills@latest add WillNam/cutmax
 ```
 
----
+全局安装：
 
-## 快速开始
+```bash
+npx skills@latest add WillNam/cutmax --global
+```
 
-### 1. 克隆
+安装后链接子技能（本地 + 平台）：
+
+```bash
+cd ~/.codex/skills/cutmax   # 或 ~/.cursor/skills/cutmax
+bash scripts/link-skills.sh ~/.codex/skills
+bash scripts/link-platforms.sh ~/.codex/skills   # 可选
+```
+
+或手动克隆：
 
 ```bash
 git clone https://github.com/WillNam/cutmax.git
-cd cutmax
+bash cutmax/scripts/link-skills.sh ~/.codex/skills
 ```
 
-### 2. 链接技能到 Codex
+## 使用
 
-```bash
-# 本地技能（免费，无需账号）
-bash scripts/link-skills.sh
+### 照片 → 手绘动效
 
-# 官方平台技能（需对应账号）
-bash scripts/link-platforms.sh
+```text
+把这三张图做成手绘过程视频：photo.png / draw.png / art.png
+要求白纸起笔、手跟随擦除边缘。竖版 1080×1440。
 ```
 
-### 3. 触发 Agent
+Agent 会读取 `references/recipes.md` 的 Recipe A，调用 `photo_draw_reveal.py` 出片。
 
-在 Claude Code / Codex 中直接说：
+### 手绘日记翻页
 
-```
-/local-video-studio  →  进入视频工作室主控
-/story-to-handdrawn  →  把一张照片做成手绘动效成片
-/baocut              →  混剪 + 裁剪
-/video-shotcraft     →  运镜设计
+```text
+把这 4 张手绘页做成翻页日记，标题「夏日穿搭」，layout=full。
 ```
 
----
+### 平台增强
 
-## 技能全览
+```text
+本地 cut 已完成，用 ChatCut 加字幕和 MG。计费前告诉我消耗。
+```
 
-### 本地地基（`skills/`）
+Agent 读取 `references/platform-guide.md`，确认后再调 MCP。
 
-| 技能 | 说明 | 依赖 |
-|------|------|------|
-| `local-video-studio` | 主控中枢，路由所有视频任务 | ffmpeg · Pillow |
-| `story-to-handdrawn-video` | 照片 → 手在画 → 线稿 → 水彩成片 | Remotion · ffmpeg · Pillow |
-| `baocut` | 智能混剪、裁剪、字幕 | BaoCut |
-| `manim-video` | 数学 / 数据可视化动画 | Manim · ffmpeg |
-| `video-shotcraft` | 镜头语言设计 + 分镜 | — |
-| `script-to-shootable-storyboard` | 脚本 → 可执行拍摄分镜 | Pillow |
-| `self-media-short-video` | 短视频脚本与结构 | — |
-| `self-media-content-brief` | 内容 Brief 生成 | — |
-| `self-media-content-delivery` | 多平台分发排期 | — |
-| `self-media-content-workflow` | 从选题到成片全流程 | — |
-| `self-media-platform-copywriting` | 平台文案（小红书 / 抖音 / 微信） | — |
-| `gbro-cover-design` | 封面设计 | Pillow / ImageMagick |
-| `xhs-visual-director-skill` | 小红书视觉风格 | — |
-| `guizang-social-card-skill` | 社交卡片设计 | — |
-| `learning-map-infographic` | 学习地图信息图 | — |
-| `female-outfit-director` | 穿搭选品拍摄指导 | — |
-| `video-publisher` | 发布工具集成 | — |
-| `dr-chan-video-production` | 医疗健康视频制作规范 | — |
-| `conan-digital-human` | 数字人视频工作流 | — |
+## 内置技能（部分）
 
-### 官方加持（`platforms/`）
+**本地地基：** local-video-studio · story-to-handdrawn-video · baocut · manim-video · video-shotcraft · gbro-cover-design · self-media-short-video · …
 
-| 平台 | 说明 | 计费 |
-|------|------|------|
-| `seedance2` | 即梦 AI 视频生成，文/图生视频 | 按量 |
-| `chatcut` | ChatCut AI 剪辑助手 | 订阅 |
-| `pireel` | Pireel 竖版一键成片 | 订阅 |
-| `seedance-and-prompts` | 即梦系 Prompt Pack，不调 API 可纯用提示词 | 免费提示词 |
+**官方加持：** Seedance 即梦 · ChatCut · Pireel · seedance-and-prompts
 
----
+完整列表见 [`references/skill-catalog.md`](references/skill-catalog.md)。
 
-## 关于平台集成
+## 仓库结构
 
-cutmax 不抵制付费平台。  
-本地能力跑稳了，平台让它飞得更高。
+```text
+SKILL.md                          # 主 Skill 路由中枢
+references/
+  skill-catalog.md                # 全部技能索引
+  recipes.md                      # 本地配方 A–F
+  platform-guide.md               # 平台选择与计费礼貌
+  free-stack.md                   # 允许 / 禁止工具栈
+examples/
+  prompts.md                      # 中英示例 Prompt
+assets/
+  cutmax-hero-dark.png            # 品牌封面
+  cutmax-architecture.png         # 架构分类图
+  cutmax-feature-draw.png         # 功能流程图
+skills/                           # 19 个本地子技能
+platforms/                        # 4 个官方平台包
+tools/                            # Remotion 工程源码
+scripts/                          # link-skills / link-platforms
+README.md
+LICENSE
+```
 
-规则只有一条：**计费前说清楚。** Agent 使用平台能力时，会先列出预计消耗并等你确认，不会静默扣费。
+## 核心规范（摘要）
 
-没有账号？技能自动回退到本地方案或只输出 Prompt / 分镜，不会静默失败。
+- 默认竖版 1080×1440 或 1080×1920，静音 H.264
+- 过程动效：真白纸 → 线稿 → 上色 → 成稿，四阶段肉眼可辨
+- 成片前抽帧自检 ≥3 帧；产物写入 `outputs/<slug>/` + MANIFEST
+- 付费平台：先说清楚 → 用户确认 → 再调用
+- B-roll：Pexels 优先，脸区安全，MANIFEST 映射时间轴
 
----
+## 展示
 
-## 贡献
+<img src="assets/cutmax-feature-draw.png" alt="照片变成有过程的成片" width="100%" />
 
-欢迎 PR。新技能请按 `skills/local-video-studio/` 的 `SKILL.md` 格式提交。  
-平台集成请放 `platforms/` 并在 `CATALOG.md` 登记。
+<img src="assets/cutmax-architecture.png" alt="skills 本地地基 + platforms 官方加持" width="100%" />
 
----
+## License
 
-<div align="center">
-
-<img src="brand/cutmax-social-dark.png" alt="cutmax" width="400" />
-
-<br/>
-
-**cutmax** · MIT · [WillNam/cutmax](https://github.com/WillNam/cutmax)
-
-</div>
+MIT — 见 [LICENSE](LICENSE)
