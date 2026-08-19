@@ -27,6 +27,7 @@
 | 风格 Playbook | 吉卜力 / 极简 / 扁平 MG / 电影质感 — YAML 可配 |
 | 工具注册 & 选择器 | TTS / 视频 / 图像 provider 自动发现与路由 |
 | Ink Theater | 本地角色 SVG 绑定 + 动作时间轴 |
+| 短视频自动化 | 文案→配音→素材→字幕→成片 全自动流水线 |
 
 > **原则：** 本地把事做稳，平台把事做漂亮。
 
@@ -118,6 +119,10 @@ openmontage/                      # Pipeline 引擎 + 工具注册 + 风格 + �
   ink-theater/                    #   角色动画引擎
   remotion-composer/              #   Remotion 场景类型
   docs/                           #   架构 / Provider 文档
+moneyprinter/                     # 短视频自动化引擎 (文案→成片)
+  app/                            #   FastAPI 后端 + 服务层
+  webui/                          #   Streamlit WebUI
+  resource/                       #   字体 / BGM / 公共素材
 scripts/                          # link-skills / link-platforms
 README.md
 LICENSE

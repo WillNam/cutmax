@@ -65,6 +65,7 @@ description: >
 | 电影级 Pipeline | `openmontage/` — 动画 / 纪录片 / 口播 / 解说 / 角色动画 |
 | 风格 Playbook | `openmontage/styles/` — 吉卜力 / 极简 / 扁平 MG / 电影 |
 | 工具注册 & 选择器 | `openmontage/tools/` — TTS / 视频 / 图像 provider 自动发现 |
+| 短视频自动化 | `moneyprinter/` — 文案→配音→素材→字幕→成片全流程 |
 
 完整列表见 `references/skill-catalog.md`。
 
