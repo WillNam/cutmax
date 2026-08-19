@@ -68,7 +68,7 @@ description: >
 手绘日记（本地 Remotion）：
 
 ```bash
-export STORY_VIDEO_PROJECT="/Users/minnan/Projects/conan-digital-human/tools/story-to-handdrawn-video"
+export STORY_VIDEO_PROJECT="${CUTMAX_ROOT:-.}/tools/story-to-handdrawn-video"
 cd "$STORY_VIDEO_PROJECT"
 python3 scripts/run_story_video.py \
   --images /abs/01.png /abs/02.png /abs/03.png /abs/04.png \

@@ -9,13 +9,13 @@ Use this skill as the Dr Chan client layer. Keep the project genuinely editable 
 
 ## Canonical source and installation
 
-This folder is the editable source of this skill: `/Users/minnan/Downloads/dr-chan-video-production`.
+This skill ships inside cutmax at `skills/dr-chan-video-production/`.
 
-Install it as:
+Install via cutmax:
 
-- `~/.codex/skills/dr-chan-video-production -> /Users/minnan/Downloads/dr-chan-video-production`
-
-Do not keep an independent copied working directory under `~/.codex/skills`; future edits should be made here and picked up through the symlink.
+```bash
+bash scripts/link-skills.sh ~/.codex/skills
+```
 
 ## Load the production context
 

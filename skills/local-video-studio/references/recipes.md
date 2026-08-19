@@ -55,7 +55,7 @@ Keep titles as burned-in text only if user asks; default silent.
 ## Recipe C — Handdrawn diary (Remotion)
 
 ```bash
-export STORY_VIDEO_PROJECT="/Users/minnan/Projects/conan-digital-human/tools/story-to-handdrawn-video"
+export STORY_VIDEO_PROJECT="${CUTMAX_ROOT:-.}/tools/story-to-handdrawn-video"
 python3 "$STORY_VIDEO_PROJECT/scripts/run_story_video.py" \
   --images ... --title "..." --mode full --transition cut|page-flip \
   --page-duration 4.6 --layout full

@@ -13,6 +13,8 @@ out/
 .env.*
 public/assets/generated/
 **/public/generated/
+uploaded-pages.json
+storyboard.uploaded.json
 .idea/
 .vscode/
 *.log
