@@ -2,7 +2,7 @@
 
 **WillNam 出品的 Agent 视频工作室。**
 
-本地地基，官方加持。为 Codex / Cursor 设计的剪辑与素材技能包——照片→手绘动效、翻页日记、B-roll 插入、口播整理，内置 **19 个本地技能 + 4 个官方平台**（Seedance、ChatCut、Pireel），一条链路从本地保底到平台拔高。
+本地地基，官方加持。为 Codex / Cursor 设计的全栈视频工作室——照片→手绘动效、翻页日记、B-roll 插入、口播整理，**19 个本地技能 + 4 个官方平台**（Seedance、ChatCut、Pireel）+ **完整 Pipeline 引擎**（动画解说 / 纪录片蒙太奇 / 电影级分镜 / 角色动画 / 口播 Avatar / 播客再加工），一条链路从本地保底到平台拔高。
 
 **仓库：** https://github.com/WillNam/cutmax
 
@@ -23,6 +23,10 @@
 | 示例 Prompt | 中英双语 |
 | 品牌视觉 | 明亮创作者风封面 + 架构图 |
 | 品牌风格预设 | 腾讯 / 阿里 / 字节 / B站 / Apple / Spotify 等 |
+| Pipeline 引擎 | 动画解说 / 纪录片 / 电影 / 口播 Avatar / 播客再加工 / 角色动画 |
+| 风格 Playbook | 吉卜力 / 极简 / 扁平 MG / 电影质感 — YAML 可配 |
+| 工具注册 & 选择器 | TTS / 视频 / 图像 provider 自动发现与路由 |
+| Ink Theater | 本地角色 SVG 绑定 + 动作时间轴 |
 
 > **原则：** 本地把事做稳，平台把事做漂亮。
 
@@ -105,6 +109,15 @@ assets/
 skills/                           # 19 个本地子技能
 platforms/                        # 4 个官方平台包
 tools/                            # Remotion 工程源码
+openmontage/                      # Pipeline 引擎 + 工具注册 + 风格 + 脚本
+  skills/                         #   core / creative / meta / pipelines
+  tools/                          #   TTS / 视频 / 图像工具 + 选择器
+  styles/                         #   风格 Playbook YAML
+  pipeline_defs/                  #   预设 Pipeline 定义
+  lib/                            #   核心库
+  ink-theater/                    #   角色动画引擎
+  remotion-composer/              #   Remotion 场景类型
+  docs/                           #   架构 / Provider 文档
 scripts/                          # link-skills / link-platforms
 README.md
 LICENSE
